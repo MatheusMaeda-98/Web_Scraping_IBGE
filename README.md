@@ -1,7 +1,8 @@
 # Web_Scraping_IBGE
- WebScraping dados do IBGE - Dados de Carregamento Dinâmico e links vazios
-Projeto: WebScraping dados do IBGE - Dados de Carregamento Dinâmico e links hrefs = # (links vazios)
 
+Projeto: WebScraping dados do IBGE - Dados de Carregamento Dinâmico e links hrefs = # (links vazios)
+O script navega no site-alvo (https://www.ibge.gov.br/estatisticas/downloads-estatisticas.html) 
+   e inicia os downloads dos arquivos da seção "Acesso_a_internet_e_posse_celular.
 O código cria um mecanismo de web scraping complexo que visa simular uma situação real no qual o site contém links falsos href =# com botões de download que requisitam o Javascript para o download.
 Além disso, o web scraping consegue driblar a estrutura de arvore com carregamento dinâmico. Ou seja, os dados não estão dentro do HTML inicial. 
 A estratégia adotada driblar isso foi adoção de lógica de percurso das ramificações dos caminhos em xpath completo, no qual segue um padrão estrutural.
@@ -29,7 +30,7 @@ Abra o terminal dentro da pasta do projeto e execute:
   Como funciona
 ----------------
 1. O Selenium abre o Edge com o perfil `EdgeProfileKit`, que já tem o visualizador de arquivos do Office desativado.
-2. O robô navega no site-alvo (https://www.ibge.gov.br/estatisticas/downloads-estatisticas.html) 
+2. O script navega no site-alvo (https://www.ibge.gov.br/estatisticas/downloads-estatisticas.html) 
    e inicia os downloads dos arquivos da seção "Acesso_a_internet_e_posse_celular.
 3. Um organizador em segundo plano detecta os arquivos na pasta Downloads e move para as pastas corretas automaticamente.
 4. Tudo funciona sem intervenção manual.
