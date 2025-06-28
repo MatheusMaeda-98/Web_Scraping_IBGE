@@ -6,7 +6,7 @@ O código cria um mecanismo de web scraping complexo que visa simular uma situa�
 Além disso, o web scraping consegue driblar a estrutura de arvore com carregamento dinâmico. Ou seja, os dados não estão dentro do HTML inicial. 
 A estratégia adotada driblar isso foi adoção de lógica de percurso das ramificações dos caminhos em xpath completo, no qual seguia um padrão estrutural.
 Ainda, o script dribla o viewer office nativo do navegador Edge que impede o download de arquivos .xlsx e .ods . Para isso, adotei o EdgeProfileKit, já incluso na pasta.
-Por fim, no script foi implementado um organizador dos arquivos baixados, imitando a estrutura de pastas do site do IBGE.
+Por fim, no script foi implementado um organizador dos arquivos baixados, copiando a estrutura de pastas do site do IBGE.
 
 
  Requisitos
@@ -26,7 +26,7 @@ Abra o terminal dentro da pasta do projeto e execute:
 
    pip install -r requirements.txt
 
-  Como funcion
+  Como funciona
 ----------------
 1. O Selenium abre o Edge com o perfil `EdgeProfileKit`, que já tem o visualizador de arquivos do Office desativado.
 2. O robô navega no site-alvo (https://www.ibge.gov.br/estatisticas/downloads-estatisticas.html) 
