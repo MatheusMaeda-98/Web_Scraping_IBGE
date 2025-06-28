@@ -4,7 +4,7 @@ Projeto: WebScraping dados do IBGE - Dados de Carregamento Dinâmico e links hre
 
 O código cria um mecanismo de web scraping complexo que visa simular uma situação real no qual o site contém links falsos href =# com botões de download que requisitam o Javascript para o download.
 Além disso, o web scraping consegue driblar a estrutura de arvore com carregamento dinâmico. Ou seja, os dados não estão dentro do HTML inicial. 
-A estratégia adotada driblar isso foi adoção de lógica de percurso das ramificações dos caminhos em xpath completo, no qual seguia um padrão estrutural.
+A estratégia adotada driblar isso foi adoção de lógica de percurso das ramificações dos caminhos em xpath completo, no qual segue um padrão estrutural.
 Ainda, o script dribla o viewer office nativo do navegador Edge que impede o download de arquivos .xlsx e .ods . Para isso, adotei o EdgeProfileKit, já incluso na pasta.
 Por fim, no script foi implementado um organizador dos arquivos baixados, copiando a estrutura de pastas do site do IBGE.
 
